@@ -5,7 +5,7 @@ using namespace std;
 int main() {
   string filename;
   int size;
-  int m_1[20][20], m_2[20][20];
+  int m_1[20][20], m_2[20][20], result[20][20];
   std::cout << "Enter a filename: ";
   std::cin >> filename;
   ifstream myfile(filename);
@@ -21,17 +21,15 @@ int main() {
     }
   }
 
-  cout << "Matrix 1:\n";
   for (int i=0; i<size; i++) {
     for (int j = 0; j < size; j++) {
-      std::cout << m_1[i][j] << "\t";
+      result[i][j] = m_1[i][j] + m_2[i][j];
     }
-    cout << "\n";
   }
- cout << "Matrix 2:\n";
+  cout << "Result:\n";
   for (int i=0; i<size; i++) {
     for (int j = 0; j < size; j++) {
-      std::cout << m_2[i][j] << "\t";
+      std::cout << result[i][j] << "\t";
     }
     cout << "\n";
   }
@@ -40,4 +38,3 @@ myfile.close();
 
   return 0;
 }
-
