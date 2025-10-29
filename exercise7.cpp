@@ -26,8 +26,8 @@ int main() {
   col = input-1;
   cout << "Enter new value: ";
   cin >> input;
-  if (row >= 0 && row < size && col >= 0 && col < size) {
-      m_1[row][col] = input; 
+  if (row >= 0 && row < size && col >= 0 && col < size) { //makes sure the row and columns given are within the size of the matrix.
+      m_1[row][col] = input; //simply sets the value at the row and column given to the value given. 
   }
   else {
     cout << "Invalid bounds.";

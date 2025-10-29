@@ -17,10 +17,11 @@ int main() {
       myfile >> m_1[i][j];
     }
   }
-  for (int i=0; i<size; i++) {
-    main += m_1[i][i];
-    secondary += m_1[i][size -i -1];
+  for (int i=0; i<size; i++) { //for every row/col 
+    main += m_1[i][i]; //adds the values in a diagonal 
+    secondary += m_1[i][size - i - 1]; //adds the values in the second diagonal 
   }
+  //prints the main sum and the secondary sum
  cout << "Result:\n";
  cout << "Main sum: " << main << "\n";
  cout << "Secondary sum: " << secondary << "\n";

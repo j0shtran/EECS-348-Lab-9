@@ -24,7 +24,7 @@ int main() {
   cout << "Enter second column: ";
   cin >> input;
   col2 = input-1;
-  if (col1 >= 0 && col1 < size && col2 >= 0 && col2 < size) {
+  if (col1 >= 0 && col1 < size && col2 >= 0 && col2 < size) { //functions exactly the same as exercise 5, just utilizes the column index instead of the row index. 
     for (int j = 0; j < size; j++) {
       int temp;
       temp = m_1[j][col1];
